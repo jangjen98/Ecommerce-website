@@ -28,10 +28,14 @@ const COMPONENTS = [
   CartComponent,
   SignUpComponent,
   MyAccountComponent,
+  FooterComponent,
+  BannerComponent,
+  BestSellerComponent,
+  CategoriesComponent,
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS, FooterComponent, BannerComponent, BestSellerComponent, CategoriesComponent],
+  declarations: [...COMPONENTS],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
