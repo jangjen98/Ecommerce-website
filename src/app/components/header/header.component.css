@@ -1,0 +1,63 @@
+nav{
+    margin-bottom: 0px;
+}
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #FFFDEC;
+    width: auto;
+    height: 85px;
+    color: #000000;
+    font: JetBrains Mono;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 31.68px;
+
+}
+
+.left-side,
+.right-side {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: calc(50% -100px);
+}
+.left-side{
+    margin-left: 135px;
+}
+.right-side{
+    margin-right: 19.17px;
+}
+.left,
+input {
+    margin: 33px 41px 18px 0px;
+    padding: 0px !important;
+}
+
+.right {
+    margin:26.33px 29.42px 23.33px 0px;
+    padding: 0px !important;
+}
+.last-right{
+    margin-right: 0px;
+}
+input::placeholder {
+    text-align: center;
+    font-size: 16px;
+    color: #605E5E;
+}
+#search{
+    border-radius: 20px;
+    margin-right: 50.33px !important;
+    background-image: url(/assets/images/magnifying.png);
+    background-repeat: no-repeat;
+    background-position: 30px 8px ;
+}
+
+#account {
+    font-size: 33.33px;
+}
+
+#cart {
+    font-size: 41.68px;
+}

@@ -1,0 +1,69 @@
+.banner {
+    background-image: url(/assets/images/background_banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 452px;
+}
+
+.main-area {
+    width: 1600px;
+    height: 387px;
+    background-color: #ECFFFD;
+    position: relative;
+    left: 153px;
+    top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-area {
+    margin: 46px 100px 61px 40.59px;
+}
+
+.title-content {
+    margin-left: 24px;
+}
+
+hr {
+    border: 2px solid #000000;
+    width: 515.85px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.transfer-page {
+    cursor: pointer;
+    padding: 8px 35.64px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    background: #F2ECFF;
+    border-radius: 15px;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    box-shadow: 3.96px 9px 3px black;
+}
+
+.transfer-page:hover {
+    background-color: #a498be;
+}
+
+.arrow-image {
+    margin-left: 35px;
+    margin-bottom: 5px;
+}
+.image-area{
+    margin-right: 120.79px;
+    margin-top: 26px;
+}
+.frame{
+    box-shadow: 10.89px 12px 3px black;
+    size: 376.24px 320px;
+    background-color:#f7fafa;
+}
+.img-on-banner{
+    size: 310px 233px;
+    margin: 36px 33.21px;
+}
