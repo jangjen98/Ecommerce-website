@@ -1,27 +1,47 @@
 <nav class="navbar navbar-default">
   <div class="header">
+    <!--? LEFT-CONTENT -->
     <ul class="nav left-side">
-      <li class="link left-link"><a [routerLink]="'home'" class="left">Home</a></li>
       <li class="link left-link">
-        <a [routerLink]="'products'" class="left">Products</a>
+        <a [routerLink]="HOME" class="left">Home</a>
       </li>
-      <li class="link left-link"><a [routerLink]="'login'" class="left">Log in</a></li>
       <li class="link left-link">
-        <a [routerLink]="'about-us'" class="left">About us</a>
+        <a [routerLink]="PRODUCTS" class="left">Products</a>
+      </li>
+      <li class="link left-link">
+        <a [routerLink]="LOGIN" class="left">Log in</a>
+      </li>
+      <li class="link left-link">
+        <a [routerLink]="ABOUT_US" class="left">About us</a>
       </li>
     </ul>
+
+    <!-- ? RIGHT-CONTENT -->
     <ul class="nav navbar-right right-side">
       <li class="link right-link">
-
-        <input type="text" placeholder=" Search..." class="right" id="search"/></li>
+        <div class="search-form right">
+          <img
+            src="/assets/icons/magnifying.png"
+            alt="icon-search"
+            class="icon-search"
+          />
+          <input
+            type="text"
+            placeholder=" Search..."
+            class="search-box"
+            id="search"
+          />
+        </div>
+      </li>
       <li class="link right-link">
-        <a [routerLink]="'my-account'" class="right"
-          ><img src="/assets/images/account.png" id="account"
+        <a [routerLink]="MY_ACCOUNT" class="right icon-link"
+          ><img src="/assets/icons/account.png"
         /></a>
       </li>
       <li class="link right-link">
-        <a [routerLink]="'cart'" class="right last-right"><img src="/assets/images/cart.png" id="cart"
-            /></a>
+        <a [routerLink]="CART" class="right last-right icon-link"
+          ><img src="/assets/icons/cart.png"
+        /></a>
       </li>
     </ul>
   </div>

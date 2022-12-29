@@ -16,6 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './pages/home/banner/banner.component';
 import { BestSellerComponent } from './pages/home/best-seller/best-seller.component';
 import { CategoriesComponent } from './pages/home/categories/categories.component';
+import { CardComponent } from './components/card/card.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 const COMPONENTS = [
   AppComponent,
@@ -32,6 +34,8 @@ const COMPONENTS = [
   BannerComponent,
   BestSellerComponent,
   CategoriesComponent,
+  CardComponent,
+  ProductDetailComponent,
 ];
 
 @NgModule({

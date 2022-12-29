@@ -54,16 +54,12 @@ hr {
     margin-left: 35px;
     margin-bottom: 5px;
 }
-.image-area{
-    margin-right: 120.79px;
-    margin-top: 26px;
+app-card{
+  background-color: #ffff;
+  margin: 4.5rem 20rem 5rem 20rem;
 }
-.frame{
-    box-shadow: 10.89px 12px 3px black;
-    size: 376.24px 320px;
-    background-color:#f7fafa;
-}
+
 .img-on-banner{
-    size: 310px 233px;
-    margin: 36px 33.21px;
+    size: 3rem 2rem;
+    margin: 3rem;
 }

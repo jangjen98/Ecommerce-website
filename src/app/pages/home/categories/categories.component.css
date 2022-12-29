@@ -1,89 +1,90 @@
 .categories {
-    display: flex;
-    flex-direction: column;
-    margin: 0 174px 0px 392px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 174px 0px 392px;
 }
 
 hr {
-    width: 1048px;
-    border: 1px solid #000000;
+  width: 1048px;
+  border: 1px solid #000000;
 
 }
-.top{
-    margin: 0px;
+
+.top {
+  margin: 0px;
 }
-.bottom{
-    margin: 103px 0px 105px 0px;
+
+.bottom {
+  margin: 103px 0px 105px 0px;
 }
 
 .categories-title {
-    margin-top: 71px;
-    margin-bottom: 44px;
+  margin-top: 71px;
+  margin-bottom: 44px;
 }
 
 .categories-tags {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .tag-text {
-    padding: 8%;
-    box-sizing: border-box;
-    border: 1px solid #000000;
-    box-shadow: 9px 8px 3px black;
-    margin: 20px 15px 0px 0px;
-    font-style: normal;
+  padding: 3rem;
+  font-style: normal;
+  font-size: 80px;
+}
+
+app-card {
+  margin: 2.5rem 1.5rem;
 }
 
 .tag-1 {
-    font-family: 'Marck Script';
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 100px;
-    background: #FFECF6;
+  font-family: 'Marck Script';
+  font-weight: 400;
+  line-height: 100px;
+  background: #FFECF6;
 }
 
 .tag-2 {
-    font-family: 'JetBrains Mono';
-    font-weight: 800;
-    font-size: 90px;
-    line-height: 119px;
-    background: #FFECEC;
+  font-family: 'JetBrains Mono';
+  font-weight: 800;
+  line-height: 119px;
+  background: #FFECEC;
 }
 
 .tag-3 {
-    font-family: 'Inconsolata';
-    font-weight: 400;
-    font-size: 80px;
-    line-height: 80px;
-    background: #ECFFFA;
+  font-family: 'Inconsolata';
+  font-weight: 400;
+  line-height: 80px;
+  background: #ECFFFA;
 }
 
 .tag-4 {
-    font-family: 'Mali';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 102px;
-    line-height: 133px;
-    background: #F2ECFF;
+  font-family: 'Mali';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133px;
+  background: #F2ECFF;
 }
 
 .adding-tags {
-    margin-top: 66px;
-    font-family: 'JetBrains Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
+  margin-top: 66px;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
 }
-.adding-button{
-    padding: 0.4% 12.5% 0.4% 2.81%;
-    text-align: left;
-    border-radius: 15px;
-    background: #F2ECFF;
+
+.adding-button {
+  padding: 0.4% 12.5% 0.4% 2.81%;
+  text-align: left;
+  border-radius: 15px;
+  background: #F2ECFF;
 }
-.arrow-image{
-    position:relative;
-    left: 75%;
-    bottom: 65%;
+
+.arrow-image {
+  position: relative;
+  left: 75%;
+  bottom: 65%;
 }

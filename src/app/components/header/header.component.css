@@ -1,63 +1,97 @@
-nav{
-    margin-bottom: 0px;
+nav {
+  position: fixed;
+  z-index: 5;
+  width: 100vw;
+  height: 1rem;
 }
-.header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    background-color: #FFFDEC;
-    width: auto;
-    height: 85px;
-    color: #000000;
-    font: JetBrains Mono;
-    font-size: 24px;
-    font-weight: 800;
-    line-height: 31.68px;
 
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #FFFDEC;
+  color: #000000;
+  font: JetBrains Mono;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 31.68px;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  background-color: transparent !important;
+}
+
+a:focus {
+  background-color: transparent !important;
 }
 
 .left-side,
 .right-side {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-basis: calc(50% -100px);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: calc(50% -100px);
 }
-.left-side{
-    margin-left: 135px;
+
+.left-side {
+  margin-left: 5rem;
 }
-.right-side{
-    margin-right: 19.17px;
+
+.right-side {
+  margin-right: 5rem;
 }
-.left,
-input {
-    margin: 33px 41px 18px 0px;
-    padding: 0px !important;
+
+.left {
+  margin: 33px 41px 18px 0px;
+  padding: 0px !important;
 }
+
 
 .right {
-    margin:26.33px 29.42px 23.33px 0px;
-    padding: 0px !important;
+  margin: 2.5rem 3rem 2.5rem 0;
+  padding: 0px !important;
 }
-.last-right{
-    margin-right: 0px;
+
+.nav>li>a>img {
+  max-width: 33px;
 }
+
+
+.last-right {
+  margin-right: 0px;
+}
+
+input {
+  border: none;
+  margin-left: 7rem;
+  border-radius: 20px;
+}
+
 input::placeholder {
-    text-align: center;
-    font-size: 16px;
-    color: #605E5E;
+  text-align: left;
+  font-size: 16px;
+  color: #605E5E;
 }
-#search{
-    border-radius: 20px;
-    margin-right: 50.33px !important;
-    background-image: url(/assets/images/magnifying.png);
-    background-repeat: no-repeat;
-    background-position: 30px 8px ;
+input:focus{
+  border: none;
+  outline: none;
 }
 
-#account {
-    font-size: 33.33px;
+
+.icon-search {
+  display: inline-block;
+  position: absolute;
+  right: 36rem;
+  padding: 1rem 3rem;
+  margin: 0 1.5rem;
 }
 
-#cart {
-    font-size: 41.68px;
+.search-form {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  margin-right: 50.33px !important;
 }

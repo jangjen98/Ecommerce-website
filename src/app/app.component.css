@@ -1,10 +1,8 @@
-
-
-.container{
+.container {
     display: flex;
     flex-direction: column;
     height: auto;
-    width:auto;
+    width: auto;
     padding: 0px;
     overflow: auto;
 }

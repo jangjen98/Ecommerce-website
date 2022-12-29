@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -9,53 +10,64 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 
+import {
+  ABOUT_US,
+  CART,
+  HOME,
+  LOGIN,
+  MY_ACCOUNT,
+  NOT_FOUND,
+  PRODUCTS,
+  SIGNIN,
+} from './common/config/route.config';
+
 const routes: Routes = [
   {
     path: '',
     children: [
       {
         path: '',
-        redirectTo:'home',
+        redirectTo: HOME,
         pathMatch: 'full',
       },
       {
-        path:'home',
-        component: HomeComponent
+        path: HOME,
+        component: HomeComponent,
       },
       {
-        path:'cart',
-        component: CartComponent
+        path: CART,
+        component: CartComponent,
       },
       {
-        path:'login',
-        component: LoginComponent
+        path: LOGIN,
+        component: LoginComponent,
       },
       {
-        path:'signup',
-        component: SignUpComponent
+        path: SIGNIN,
+        component: SignUpComponent,
       },
       {
-        path:'my-account',
-        component: MyAccountComponent
+        path: MY_ACCOUNT,
+        component: MyAccountComponent,
       },
       {
-        path:'products',
-        component: ProductsComponent
+        path: PRODUCTS,
+        component: ProductsComponent,
       },
       {
-        path:'about-us',
-        component: AboutUsComponent
+        path: ABOUT_US,
+        component: AboutUsComponent,
       },
-    ]
+    ],
   },
   {
-    path:'**',
-    component: NotFoundComponent
+    path: NOT_FOUND,
+    component: NotFoundComponent,
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
