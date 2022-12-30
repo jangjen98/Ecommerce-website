@@ -6,13 +6,14 @@
 }
 
 .main-area {
-    width: 1600px;
-    height: 387px;
+    width: 145rem;
+    height: 38.7rem;
     background-color: #ECFFFD;
     position: relative;
-    left: 153px;
-    top: 25px;
+    left: 12rem;
+    top: 2.5rem;
     display: flex;
+    margin-left: 2rem;
     justify-content: space-between;
 }
 
