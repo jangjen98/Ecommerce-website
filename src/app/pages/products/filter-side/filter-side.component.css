@@ -1,0 +1,54 @@
+.filter-side {
+  display: flex;
+  margin: 10.7rem 0 23.9rem 6.6rem;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+}
+
+.vert-line {
+  margin-left: 10.3rem;
+  margin-right: 6.4rem;
+  height: 131.2rem;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  width: 39.4rem;
+  margin-top: 1.6rem;
+}
+
+.filter {
+  margin-bottom: 5.3rem;
+}
+
+.material-board {
+  margin-top: 4.5rem;
+}
+
+.open-close-btn {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  padding: 0rem 4rem 3.1rem;
+  width: 100%;
+  margin: 0;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+
+
+
+
+ul {
+  list-style: none;
+  margin-bottom: 7.3rem;
+  margin-top: 1rem;
+}
+
+li {
+  margin-top: 2.9rem;
+}

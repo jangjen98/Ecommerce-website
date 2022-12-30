@@ -21,6 +21,7 @@
 .item {
   background: #F2ECFF;
   padding: 0 !important;
+  border: none;
 }
 
 .best-seller-title {

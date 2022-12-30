@@ -18,6 +18,11 @@ import { BestSellerComponent } from './pages/home/best-seller/best-seller.compon
 import { CategoriesComponent } from './pages/home/categories/categories.component';
 import { CardComponent } from './components/card/card.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { InfoComponent } from './pages/my-account/info/info.component';
+import { WishLishComponent } from './pages/my-account/wish-lish/wish-lish.component';
+import { FilterSideComponent } from './pages/products/filter-side/filter-side.component';
+import { ListProductsComponent } from './pages/products/list-products/list-products.component';
+import { VerticalLineComponent } from './components/vertical-line/vertical-line.component';
 
 const COMPONENTS = [
   AppComponent,
@@ -39,7 +44,7 @@ const COMPONENTS = [
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS],
+  declarations: [...COMPONENTS, InfoComponent, WishLishComponent, FilterSideComponent, ListProductsComponent, VerticalLineComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
