@@ -1,14 +1,14 @@
 import { EventEmitter, Injectable } from '@angular/core';
-import { ICategory } from '../models/index';
+import { ICategoryAppearance, ICategory } from '../models/index';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CategoryService {
-  public categoriesChanged = new EventEmitter<ICategory[]>();
-  public categoryAdded = new EventEmitter<ICategory>();
+  public categoriesChanged = new EventEmitter<ICategoryAppearance[]>();
+  public categoryAdded = new EventEmitter<ICategoryAppearance>();
 
-  public categories: ICategory[] = [
+  public categories: ICategoryAppearance[] = [
     {
       name: 'brands',
       textFont: 'Marck Script',
@@ -33,11 +33,11 @@ export class CategoryService {
   getCategories() {
     return this.categories.slice();
   }
-  addCategories(category: ICategory) {
+  addCategories(category: ICategoryAppearance) {
     this.categories.push(category);
     this.categoriesChanged.emit(this.categories.slice());
   }
-  changeCategories(categories: ICategory[]) {
+  changeCategories(categories: ICategoryAppearance[]) {
     this.categories.push(...categories);
     this.categoriesChanged.emit(this.categories.slice());
   }

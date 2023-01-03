@@ -1,4 +1,4 @@
-import { ICategory, IImage, IReview } from '.';
+import { ICategory, IImage, IReview, IMaterial } from '.';
 
 export interface IProduct {
   name: string;
@@ -9,4 +9,5 @@ export interface IProduct {
   review: Array<IReview>;
   description: string;
   categories: Array<ICategory>;
+  material: Array<IMaterial>;
 }
