@@ -1,5 +1,20 @@
 <div class="grid-container list-products">
-  <app-card class="item"
-  >
-</app-card>
+  <div class="item" *ngFor="let product of products">
+    <app-card>
+      <div class="item-detail">
+        <button class="add-wish-icon">
+          <img
+            src="/assets/icons/heart_plus.png"
+            alt="add-wish-icon"
+            class="add-wish-icon-img"
+          />
+        </button>
+        <img
+          [src]="product.images[0].url"
+          alt="main-pic"
+          class="product-pic"
+        />
+      </div>
+    </app-card>
+  </div>
 </div>

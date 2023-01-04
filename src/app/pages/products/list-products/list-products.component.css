@@ -1,0 +1,22 @@
+
+.list-products{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 24.1rem);
+  margin: 7rem 6.32rem 0rem 12rem;
+  gap:  20rem 15rem;
+}
+.item-detail{
+  display: flex;
+  flex-direction: column;
+}
+.add-wish-icon{
+  border: none;
+  background-color: transparent;
+  padding: 0 !important;
+  margin: 1.87rem 2.62rem 0 14.77rem;
+}
+
+.product-pic{
+  margin: 1.17rem 2.62rem 7.3rem 2.5rem;
+}
