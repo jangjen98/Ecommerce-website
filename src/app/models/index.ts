@@ -4,3 +4,4 @@ export * from './image.model';
 export * from './product.model';
 export * from './review.model';
 export * from './material.model';
+export * from './color.model';

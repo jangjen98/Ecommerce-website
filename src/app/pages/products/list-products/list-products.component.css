@@ -1,22 +1,45 @@
-
-.list-products{
+.list-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 24.1rem);
   margin: 7rem 6.32rem 0rem 12rem;
-  gap:  20rem 15rem;
+  gap: 20rem 15rem;
 }
-.item-detail{
+
+.item-detail {
   display: flex;
   flex-direction: column;
+  height: 28rem;
 }
-.add-wish-icon{
+
+.add-wish-icon {
   border: none;
   background-color: transparent;
   padding: 0 !important;
-  margin: 1.87rem 2.62rem 0 14.77rem;
+  margin: 1.87rem 0rem 0 14.77rem;
 }
 
-.product-pic{
-  margin: 1.17rem 2.62rem 7.3rem 2.5rem;
+.product-pic {
+  margin: 1.17rem 2.62rem 0 2.5rem;
+  cursor: pointer;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1.9rem 2.62rem 0 2.5rem;
+  justify-content: space-between;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.text{
+  cursor: pointer;
+}
+
+.name {
+  margin-right: 2rem;
 }

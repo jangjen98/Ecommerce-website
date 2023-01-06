@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +26,10 @@ import { WishLishComponent } from './pages/my-account/wish-lish/wish-lish.compon
 import { FilterSideComponent } from './pages/products/filter-side/filter-side.component';
 import { ListProductsComponent } from './pages/products/list-products/list-products.component';
 import { VerticalLineComponent } from './components/vertical-line/vertical-line.component';
+import { ProductPartComponent } from './pages/product-detail/product-part/product-part.component';
+import { ReviewPartComponent } from './pages/product-detail/review-part/review-part.component';
+import { PicsCollectComponent } from './pages/product-detail/product-part/pics-collect/pics-collect.component';
+import { ProductContentComponent } from './pages/product-detail/product-part/product-content/product-content.component';
 
 const COMPONENTS = [
   AppComponent,
@@ -41,11 +48,26 @@ const COMPONENTS = [
   CategoriesComponent,
   CardComponent,
   ProductDetailComponent,
+  InfoComponent,
+  WishLishComponent,
+  FilterSideComponent,
+  ListProductsComponent,
+  VerticalLineComponent,
+  ProductPartComponent,
+  ReviewPartComponent,
+  PicsCollectComponent,
+  ProductContentComponent,
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS, InfoComponent, WishLishComponent, FilterSideComponent, ListProductsComponent, VerticalLineComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [...COMPONENTS],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CommonModule,
+    FormsModule,
+    SwiperModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

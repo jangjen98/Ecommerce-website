@@ -1,21 +1,26 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { IProduct } from '../models';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProductService {
+  public productSelected = new EventEmitter<IProduct>();
+
   public products: IProduct[] = [
     {
       name: 'White Camera',
       id: 'white_cam',
       price: 105,
       images: [
-        { url: '/assets/images/white_cam.png', id:'first-img-white_cam' },
-        { url: '/assets/images/black_watch.png', id:'sec-img-white_cam' }
-
+        { url: '/assets/images/white_cam.png', id: 'first-img-white_cam' },
+        { url: '/assets/images/black_watch.png', id: 'sec-img-white_cam' },
       ],
-      color: 'white',
+      color: [
+        { color: '#FFFFFF', id: '#FFFFFF' },
+        { color: '#000000', id: '#000000' },
+      ],
       review: [
         {
           name: 'Anna',
@@ -33,8 +38,10 @@ export class ProductService {
       name: 'Black Watch',
       id: 'black_watch',
       price: 110,
-      images: [{ url: '/assets/images/black_watch.png',id:'first-img-black_watch' }],
-      color: 'black',
+      images: [
+        { url: '/assets/images/black_watch.png', id: 'first-img-black_watch' },
+      ],
+      color: [{ color: '#000000', id: '#000000' }],
       review: [
         {
           name: 'Austin',
@@ -52,8 +59,104 @@ export class ProductService {
       name: 'Black Glasses',
       id: 'black_glasses',
       price: 120,
-      images: [{ url: '/assets/images/black_glasses.png', id:'first-img-black_glasses' }],
-      color: 'black',
+      images: [
+        {
+          url: '/assets/images/black_glasses.png',
+          id: 'first-img-black_glasses',
+        },
+      ],
+      color: [
+        { color: '#000000', id: '#000000' },
+        { color: '#FFD700', id: '#FFD700' },
+      ],
+      review: [
+        {
+          name: 'James',
+          description: 'Fine',
+          date: new Date(2022, 11, 21),
+          id: 'james',
+          star: 4,
+        },
+      ],
+      description: 'Looks good but easy to broken',
+      categories: [{ name: 'cool' }, { name: 'sunny' }],
+      material: [{ material: 'glasses' }],
+    },
+    {
+      name: 'Black Camera',
+      id: 'black_camera',
+      price: 125,
+      images: [
+        { url: '/assets/images/black_cam.png', id: 'first-img-black_camera' },
+      ],
+      color: [
+        { color: '#000000', id: '#000000' },
+        { color: '#FFD700', id: '#FFD700' },
+      ],
+      review: [
+        {
+          name: 'Jane',
+          description: 'Fine',
+          date: new Date(2022, 11, 21),
+          id: 'james',
+          star: 4,
+        },
+      ],
+      description: 'Looks good',
+      categories: [{ name: 'cool' }, { name: 'photography' }],
+      material: [{ material: 'camera' }],
+    },
+    {
+      name: 'Xbox Controller',
+      id: 'xbox_controller',
+      price: 120,
+      images: [
+        {
+          url: '/assets/images/xbox_controller.png',
+          id: 'first-img-xbox_controller',
+        },
+        {
+          url: '/assets/images/xbox_controller(2).png',
+          id: 'sec-img-xbox_controller',
+        },
+        {
+          url: '/assets/images/xbox_controller(3).png',
+          id: 'third-img-xbox_controller',
+        },
+      ],
+      color: [
+        { color: '#000000', id: '#000000' },
+        { color: '#FFFFFF', id: '#FFFFFF' },
+        { color: '#19F3BF', id: '#19F3BF' },
+
+      ],
+      review: [
+        {
+          name: 'James',
+          description: 'Good',
+          date: new Date(2022, 11, 21),
+          id: 'james',
+          star: 5,
+        },
+      ],
+      description: 'Easy to use',
+      categories: [{ name: 'cool' }, { name: 'xbox' }, { name: 'game' }],
+      material: [{ material: 'plastic' }],
+    },
+    {
+      name: 'Black Glasses',
+      id: 'black_glasses',
+      price: 120,
+      images: [
+        {
+          url: '/assets/images/black_glasses.png',
+          id: 'first-img-black_glasses',
+        },
+      ],
+      color: [
+        { color: '#000000', id: '#000000' },
+        { color: '#FFD700', id: '#FFD700' },
+      ],
       review: [
         {
           name: 'James',
@@ -71,8 +174,16 @@ export class ProductService {
       name: 'Black Glasses',
       id: 'black_glasses',
       price: 120,
-      images: [{ url: '/assets/images/black_glasses.png', id:'first-img-black_glasses' }],
-      color: 'black',
+      images: [
+        {
+          url: '/assets/images/black_glasses.png',
+          id: 'first-img-black_glasses',
+        },
+      ],
+      color: [
+        { color: '#000000', id: '#000000' },
+        { color: '#FFD700', id: '#FFD700' },
+      ],
       review: [
         {
           name: 'James',
@@ -90,8 +201,16 @@ export class ProductService {
       name: 'Black Glasses',
       id: 'black_glasses',
       price: 120,
-      images: [{ url: '/assets/images/black_glasses.png', id:'first-img-black_glasses' }],
-      color: 'black',
+      images: [
+        {
+          url: '/assets/images/black_glasses.png',
+          id: 'first-img-black_glasses',
+        },
+      ],
+      color: [
+        { color: '#000000', id: '#000000' },
+        { color: '#FFD700', id: '#FFD700' },
+      ],
       review: [
         {
           name: 'James',
@@ -109,65 +228,16 @@ export class ProductService {
       name: 'Black Glasses',
       id: 'black_glasses',
       price: 120,
-      images: [{ url: '/assets/images/black_glasses.png', id:'first-img-black_glasses' }],
-      color: 'black',
-      review: [
+      images: [
         {
-          name: 'James',
-          description: 'Fine',
-          date: new Date(2022, 11, 21),
-          id: 'james',
-          star: 4,
+          url: '/assets/images/black_glasses.png',
+          id: 'first-img-black_glasses',
         },
       ],
-      description: 'Looks good but easy to broken',
-      categories: [{ name: 'cool' }, { name: 'sunny' }],
-      material: [{ material: 'glasses' }],
-    },
-    {
-      name: 'Black Glasses',
-      id: 'black_glasses',
-      price: 120,
-      images: [{ url: '/assets/images/black_glasses.png', id:'first-img-black_glasses' }],
-      color: 'black',
-      review: [
-        {
-          name: 'James',
-          description: 'Fine',
-          date: new Date(2022, 11, 21),
-          id: 'james',
-          star: 4,
-        },
+      color: [
+        { color: '#000000', id: '#000000' },
+        { color: '#FFD700', id: '#FFD700' },
       ],
-      description: 'Looks good but easy to broken',
-      categories: [{ name: 'cool' }, { name: 'sunny' }],
-      material: [{ material: 'glasses' }],
-    },
-    {
-      name: 'Black Glasses',
-      id: 'black_glasses',
-      price: 120,
-      images: [{ url: '/assets/images/black_glasses.png', id:'first-img-black_glasses' }],
-      color: 'black',
-      review: [
-        {
-          name: 'James',
-          description: 'Fine',
-          date: new Date(2022, 11, 21),
-          id: 'james',
-          star: 4,
-        },
-      ],
-      description: 'Looks good but easy to broken',
-      categories: [{ name: 'cool' }, { name: 'sunny' }],
-      material: [{ material: 'glasses' }],
-    },
-    {
-      name: 'Black Glasses',
-      id: 'black_glasses',
-      price: 120,
-      images: [{ url: '/assets/images/black_glasses.png', id:'first-img-black_glasses' }],
-      color: 'black',
       review: [
         {
           name: 'James',
@@ -184,7 +254,11 @@ export class ProductService {
   ];
 
   constructor() {}
-  getProduct() {
+  getProducts() {
     return this.products;
   }
+  getProduct(product: IProduct){
+    // this.productSelected = product;
+  }
+
 }

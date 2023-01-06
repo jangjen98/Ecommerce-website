@@ -17,9 +17,11 @@ import {
   LOGIN,
   MY_ACCOUNT,
   NOT_FOUND,
+  PRODUCT,
   PRODUCTS,
   SIGNIN,
 } from './common/config/route.config';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 const routes: Routes = [
   {
@@ -53,6 +55,10 @@ const routes: Routes = [
       {
         path: PRODUCTS,
         component: ProductsComponent,
+      },
+      {
+        path: PRODUCT,
+        component: ProductDetailComponent,
       },
       {
         path: ABOUT_US,

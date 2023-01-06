@@ -1,5 +1,5 @@
 <div class="grid-container list-products">
-  <div class="item" *ngFor="let product of products">
+  <div class="item" *ngFor="let product of products"  [routerLink]="product.id" (click)="onSelect(product)">
     <app-card>
       <div class="item-detail">
         <button class="add-wish-icon">
@@ -9,11 +9,11 @@
             class="add-wish-icon-img"
           />
         </button>
-        <img
-          [src]="product.images[0].url"
-          alt="main-pic"
-          class="product-pic"
-        />
+        <img [src]="product.images[0].url" alt="main-pic" class="product-pic" />
+        <div class="text-content">
+          <p class="text name">{{ product.name }}</p>
+          <p class="text price">{{ product.price }}$</p>
+        </div>
       </div>
     </app-card>
   </div>
