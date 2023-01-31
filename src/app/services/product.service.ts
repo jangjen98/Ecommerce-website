@@ -128,7 +128,6 @@ export class ProductService {
         { color: '#000000', id: '#000000' },
         { color: '#FFFFFF', id: '#FFFFFF' },
         { color: '#19F3BF', id: '#19F3BF' },
-
       ],
       review: [
         {
@@ -257,8 +256,7 @@ export class ProductService {
   getProducts() {
     return this.products;
   }
-  getProduct(product: IProduct){
-    // this.productSelected = product;
+  getProduct(product: string) {
+    return this.products.find((p) => p.id === product);
   }
-
 }
