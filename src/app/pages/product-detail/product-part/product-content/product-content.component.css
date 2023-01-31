@@ -44,13 +44,14 @@
 }
 
 .des {
+
+  margin-bottom: 2rem;
+}
+
+.section {
   font-family: 'Inconsolata';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  margin-bottom: 2rem;
-}
-.btn-title{
-  
 }

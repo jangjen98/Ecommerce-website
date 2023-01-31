@@ -1,5 +1,4 @@
 import { EventEmitter, Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
 import { IProduct } from '../models';
 
 @Injectable({
