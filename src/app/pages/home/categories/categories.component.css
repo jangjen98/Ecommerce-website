@@ -4,18 +4,15 @@
   margin: 0 174px 0px 392px;
 }
 
-hr {
-  width: 1048px;
-  border: 1px solid #000000;
-
-}
 
 .top {
   margin: 0px;
+  width: 1048px;
 }
 
 .bottom {
   margin: 10.3rem 0 10.5rem 0;
+  width: 1048px;
 }
 
 .categories-title {

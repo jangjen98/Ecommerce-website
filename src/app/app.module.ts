@@ -30,6 +30,7 @@ import { ProductPartComponent } from './pages/product-detail/product-part/produc
 import { ReviewPartComponent } from './pages/product-detail/review-part/review-part.component';
 import { PicsCollectComponent } from './pages/product-detail/product-part/pics-collect/pics-collect.component';
 import { ProductContentComponent } from './pages/product-detail/product-part/product-content/product-content.component';
+import { HrComponent } from './components/hr/hr.component';
 
 const COMPONENTS = [
   AppComponent,
@@ -60,7 +61,7 @@ const COMPONENTS = [
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS],
+  declarations: [...COMPONENTS, HrComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

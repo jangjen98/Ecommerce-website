@@ -6,8 +6,6 @@ import { IProduct } from '../models';
   providedIn: 'root',
 })
 export class ProductService {
-  public productSelected = new EventEmitter<IProduct>();
-
   public products: IProduct[] = [
     {
       name: 'White Camera',
@@ -17,7 +15,7 @@ export class ProductService {
         { url: '/assets/images/white_cam.png', id: 'first-img-white_cam' },
         { url: '/assets/images/black_watch.png', id: 'sec-img-white_cam' },
       ],
-      color: [
+      colors: [
         { color: '#FFFFFF', id: '#FFFFFF' },
         { color: '#000000', id: '#000000' },
       ],
@@ -41,7 +39,7 @@ export class ProductService {
       images: [
         { url: '/assets/images/black_watch.png', id: 'first-img-black_watch' },
       ],
-      color: [{ color: '#000000', id: '#000000' }],
+      colors: [{ color: '#000000', id: '#000000' }],
       review: [
         {
           name: 'Austin',
@@ -65,7 +63,7 @@ export class ProductService {
           id: 'first-img-black_glasses',
         },
       ],
-      color: [
+      colors: [
         { color: '#000000', id: '#000000' },
         { color: '#FFD700', id: '#FFD700' },
       ],
@@ -89,7 +87,7 @@ export class ProductService {
       images: [
         { url: '/assets/images/black_cam.png', id: 'first-img-black_camera' },
       ],
-      color: [
+      colors: [
         { color: '#000000', id: '#000000' },
         { color: '#FFD700', id: '#FFD700' },
       ],
@@ -124,7 +122,7 @@ export class ProductService {
           id: 'third-img-xbox_controller',
         },
       ],
-      color: [
+      colors: [
         { color: '#000000', id: '#000000' },
         { color: '#FFFFFF', id: '#FFFFFF' },
         { color: '#19F3BF', id: '#19F3BF' },
@@ -152,7 +150,7 @@ export class ProductService {
           id: 'first-img-black_glasses',
         },
       ],
-      color: [
+      colors: [
         { color: '#000000', id: '#000000' },
         { color: '#FFD700', id: '#FFD700' },
       ],
@@ -179,7 +177,7 @@ export class ProductService {
           id: 'first-img-black_glasses',
         },
       ],
-      color: [
+      colors: [
         { color: '#000000', id: '#000000' },
         { color: '#FFD700', id: '#FFD700' },
       ],
@@ -206,7 +204,7 @@ export class ProductService {
           id: 'first-img-black_glasses',
         },
       ],
-      color: [
+      colors: [
         { color: '#000000', id: '#000000' },
         { color: '#FFD700', id: '#FFD700' },
       ],
@@ -233,7 +231,7 @@ export class ProductService {
           id: 'first-img-black_glasses',
         },
       ],
-      color: [
+      colors: [
         { color: '#000000', id: '#000000' },
         { color: '#FFD700', id: '#FFD700' },
       ],
@@ -256,7 +254,7 @@ export class ProductService {
   getProducts() {
     return this.products;
   }
-  getProduct(product: string) {
-    return this.products.find((p) => p.id === product);
+  getProduct(id: string) {
+    return this.products.find((p) => p.id === id);
   }
 }

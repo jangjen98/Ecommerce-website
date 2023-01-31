@@ -1,0 +1,56 @@
+.title {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 59px;
+}
+
+.colors {
+  display: flex;
+}
+
+.color-text {
+  margin-right: 20.2rem;
+}
+
+.each-color {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 5.8rem;
+  width: 3.9rem;
+  height: 3.9rem;
+}
+
+.btn-adding {
+  margin: 4.7rem 5rem 7.8rem 5rem;
+}
+
+.add-to-cart-btn {
+
+  height: 8.4rem;
+  background: #FBF5C4;
+  cursor: pointer;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 46px;
+}
+
+.btn-text {
+  text-align: center;
+  padding-top: 2.1rem;
+}
+
+.des {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 2rem;
+}
+.btn-title{
+  
+}

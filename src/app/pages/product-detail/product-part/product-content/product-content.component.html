@@ -1,1 +1,45 @@
-<p>product-content works!</p>
+<div class="product-content">
+  <div class="title">{{ product?.name }}</div>
+  <div class="hr">
+    <app-hr></app-hr>
+  </div>
+  <div class="price">{{ product?.price }}$</div>
+
+  <div class="colors">
+    <div class="color-text">Color:</div>
+    <div
+      class="each-color"
+      *ngFor="let Icolor of product?.colors"
+      [ngStyle]="{ 'background-color': Icolor.color }"
+    ></div>
+  </div>
+  <div class="hr">
+    <app-hr></app-hr>
+  </div>
+
+  <div class="btn-adding">
+    <app-card>
+      <div class="add-to-cart-btn">
+        <div class="btn-text">Add to cart</div>
+      </div>
+    </app-card>
+  </div>
+  <div class="hr">
+    <app-hr></app-hr>
+  </div>
+
+  <div class="des section">
+    <button class="btn-title open-close-btn">
+      <p>Description</p>
+      <p>-</p>
+    </button>
+    <div class="btn-content">{{product?.description}}</div>
+  </div>
+  <div class="details">
+    <button class="btn-title open-close-btn">
+      <p>Details</p>
+      <p>+</p>
+    </button>
+  </div>
+  <div class="delivery">{{ product?.name }}</div>
+</div>

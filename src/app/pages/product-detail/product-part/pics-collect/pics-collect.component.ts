@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Input } from '@angular/core';
+import { IProduct } from 'src/app/models';
 
 import { SwiperComponent } from "swiper/angular";
 
@@ -15,7 +17,7 @@ SwiperCore.use([Navigation]);
   styleUrls: ['./pics-collect.component.css']
 })
 export class PicsCollectComponent implements OnInit {
-
+  @Input() product?: IProduct;
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
