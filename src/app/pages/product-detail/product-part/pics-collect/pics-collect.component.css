@@ -1,35 +1,51 @@
-.pics-collect{
-  margin-right: 9.5rem;
+.pics-collect {
+  width: 75.2rem;
 }
 
-.swiper {
+.img-big {
+  width: 66.4rem;
+  height: 66.4rem;
+  margin-bottom: 7.4rem;
+}
+.swiper{
+  width: 50rem;
+}
+
+swiper-container {
   width: 100%;
   height: 100%;
+}
+.swiper-wrapper{
+  width: 10rem !important;
+  margin-left: 7.5rem;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  height: 100%;
+  width: 16.6rem !important;
+  margin-right: 7.3rem;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000000 !important;
+  border: #000000 solid;
+  border-radius: 50%;
+  width: 4.2rem !important;
+  height: 4.2rem !important;
+}
+:root {
+  --swiper-navigation-size: 26px !important;
+  font-weight: 800;
+}
+
+
+.img-sml {
+  cursor: pointer;
+  width: 11.6rem;
+  height: 10.8rem;
 }

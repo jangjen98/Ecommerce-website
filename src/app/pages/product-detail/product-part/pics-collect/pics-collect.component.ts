@@ -1,26 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Input } from '@angular/core';
 import { IProduct } from 'src/app/models';
+import SwiperCore, { Navigation} from 'swiper';
 
-import { SwiperComponent } from "swiper/angular";
-
-// import Swiper core and required modules
-import SwiperCore, { Navigation } from "swiper";
-import { ProductService } from 'src/app/services/product.service';
-
-// install Swiper modules
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation])
 
 @Component({
   selector: 'app-pics-collect',
   templateUrl: './pics-collect.component.html',
-  styleUrls: ['./pics-collect.component.css']
+  styleUrls: [
+    './pics-collect.component.css',
+    '../../../../../../node_modules/swiper/swiper-bundle.min.css',
+  ],
+  encapsulation: ViewEncapsulation.None,
 })
 export class PicsCollectComponent implements OnInit {
   @Input() product?: IProduct;
-  constructor(private productService: ProductService) { }
+  public big_pic?: string;
+  constructor() {}
 
   ngOnInit(): void {
+    this.big_pic = this.product?.images[0].url;
+  }
+  OnChangeBigPic(){
+
   }
 
 }

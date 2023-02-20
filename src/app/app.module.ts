@@ -32,6 +32,7 @@ import { PicsCollectComponent } from './pages/product-detail/product-part/pics-c
 import { ProductContentComponent } from './pages/product-detail/product-part/product-content/product-content.component';
 import { HrComponent } from './components/hr/hr.component';
 
+
 const COMPONENTS = [
   AppComponent,
   HeaderComponent,
@@ -58,10 +59,11 @@ const COMPONENTS = [
   ReviewPartComponent,
   PicsCollectComponent,
   ProductContentComponent,
+  HrComponent
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS, HrComponent],
+  declarations: [...COMPONENTS],
   imports: [
     BrowserModule,
     AppRoutingModule,

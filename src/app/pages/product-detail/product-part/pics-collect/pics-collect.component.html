@@ -1,7 +1,13 @@
 <div class="pics-collect">
-  <swiper [rewind]="true" [navigation]="true" class="mySwiper">
-    <ng-template swiperSlide>Slide 1</ng-template
-    ><ng-template swiperSlide>Slide 2</ng-template
-    ><ng-template swiperSlide>Slide 3</ng-template>
-  </swiper>
+  <div class="big-pic">
+    <img class="img-big" [src]="big_pic" [alt]="" />
+  </div>
+  <div class="slide">
+    <swiper [slidesPerView]="2" [spaceBetween]="0" [navigation]="true">
+      <ng-template swiperSlide *ngFor="let IImage of product?.images">
+        <img class="img-sml" [src]="IImage.url" [alt]="IImage.id" (click)="OnChangeBigPic()"/>
+      </ng-template>
+    </swiper>
+  </div>
+
 </div>
