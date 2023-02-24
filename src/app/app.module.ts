@@ -26,12 +26,13 @@ import { WishLishComponent } from './pages/my-account/wish-lish/wish-lish.compon
 import { FilterSideComponent } from './pages/products/filter-side/filter-side.component';
 import { ListProductsComponent } from './pages/products/list-products/list-products.component';
 import { VerticalLineComponent } from './components/vertical-line/vertical-line.component';
-import { ProductPartComponent } from './pages/product-detail/product-part/product-part.component';
-import { ReviewPartComponent } from './pages/product-detail/review-part/review-part.component';
-import { PicsCollectComponent } from './pages/product-detail/product-part/pics-collect/pics-collect.component';
-import { ProductContentComponent } from './pages/product-detail/product-part/product-content/product-content.component';
+import { PicsCollectComponent } from './pages/product-detail/pics-collect/pics-collect.component';
+import { ProductContentComponent } from './pages/product-detail/product-content/product-content.component';
 import { HrComponent } from './components/hr/hr.component';
+import { ReviewPartStarsComponent } from './pages/product-detail/review-part-stars/review-part-stars.component';
+import { ReviewPartCommentsComponent } from './pages/product-detail/review-part-comments/review-part-comments.component';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const COMPONENTS = [
   AppComponent,
@@ -55,11 +56,11 @@ const COMPONENTS = [
   FilterSideComponent,
   ListProductsComponent,
   VerticalLineComponent,
-  ProductPartComponent,
-  ReviewPartComponent,
   PicsCollectComponent,
   ProductContentComponent,
-  HrComponent
+  HrComponent,
+  ReviewPartStarsComponent,
+  ReviewPartCommentsComponent
 ];
 
 @NgModule({
@@ -70,6 +71,7 @@ const COMPONENTS = [
     CommonModule,
     FormsModule,
     SwiperModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

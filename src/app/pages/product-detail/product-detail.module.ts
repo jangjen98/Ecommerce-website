@@ -1,10 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ProductPartRoutingModule } from './product-part-routing.module';
-
-import { SwiperComponent } from 'swiper/angular';
-
 // import styles bundle
 import 'swiper/css/bundle';
 
@@ -16,6 +12,6 @@ SwiperCore.use([Navigation, Keyboard, Pagination, Virtual]);
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, ProductPartRoutingModule],
+  imports: [CommonModule],
 })
-export class ProductPartModule {}
+export class ProductDetailModule {}

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IProduct } from 'src/app/models';
+import { faStar } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-product-content',
@@ -9,6 +10,7 @@ import { IProduct } from 'src/app/models';
 export class ProductContentComponent implements OnInit {
   @Input() product?: IProduct;
   public avg_rate?: number;
+  public faStar_regular = faStar;
 
   constructor() {}
 

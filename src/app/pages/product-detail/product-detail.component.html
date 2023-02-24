@@ -1,6 +1,15 @@
 <app-header></app-header>
-<div class="main-content product-detail">
-  <app-product-part ></app-product-part>
-  <app-review-part></app-review-part>
+<div class="product-detail">
+  <div class="product-part">
+    <app-pics-collect [product]="product"></app-pics-collect>
+    <app-product-content [product]="product"></app-product-content>
+
+  </div>
+  <hr class="seperate" />
+  <div class="review-part">
+    <app-review-part-stars [product]="product"></app-review-part-stars>
+    <app-review-part-comments [product]="product"></app-review-part-comments>
+  </div>
 </div>
+
 <app-footer></app-footer>

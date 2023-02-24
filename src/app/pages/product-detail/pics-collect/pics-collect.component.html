@@ -1,0 +1,15 @@
+<div class="pics-collect">
+  <div class="big-pic">
+    <img class="img-big" [src]="big_pic" [alt]="big_pic_id" />
+  </div>
+  <swiper [slidesPerView]="2" [spaceBetween]="20" [navigation]="true">
+    <ng-template swiperSlide *ngFor="let IImage of product?.images">
+      <img
+        class="img-sml"
+        [src]="IImage.url"
+        [alt]="IImage.id"
+        (click)="OnChangeBigPic()"
+      />
+    </ng-template>
+  </swiper>
+</div>

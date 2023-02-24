@@ -41,6 +41,11 @@ export const products: IProduct[] = [
     price: 110,
     images: [
       { url: '/assets/images/black_watch.png', id: 'first-img-black_watch' },
+      { url: '/assets/images/black_watch.png', id: 'sec-img-black_watch' },
+      { url: '/assets/images/black_watch.png', id: 'third-img-black_watch' },
+      { url: '/assets/images/black_watch.png', id: 'fourth-img-black_watch' },
+      { url: '/assets/images/black_watch.png', id: 'fifth-img-black_watch' },
+
     ],
     colors: [{ color: '#000000', id: '#000000' }],
     review: [

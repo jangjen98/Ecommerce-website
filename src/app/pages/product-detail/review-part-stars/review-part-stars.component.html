@@ -1,0 +1,12 @@
+<div class="review-part-stars">
+  <div class="title">Reviews</div>
+  <div class="sml-title">
+    <div class="sml-title-char">Ratings</div>
+    <div class="sml-title-num">({{ numberOfReviews }} reviews)</div>
+  </div>
+  <div class="stars-part" *ngFor="let eachStar of listStars">
+    <div class="">{{ eachStar }}</div>
+    <img src="/assets/icons/star.png" alt="stars" />
+    <div class="show-star-box"></div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.product-part, .review-part{
+  display:flex;
+  margin: 7.8rem 8.7rem 3.6rem 8.8rem;
+
+}
+.part{
+  flex-grow: 1;
+}
+.seperate {
+  margin: 0 5.5rem 7.8rem 5.5rem;
+  border: 1px solid#000000;
+}
+.product-part{
+  margin-top: 17.2rem !important;
+  height: 94.8rem;
+  justify-content: space-around;
+}
+.review-part{
+  margin-bottom: 9.4rem;
+  justify-content: space-between;
+
+}

@@ -1,0 +1,42 @@
+.review-part-stars {
+  display: flex;
+  flex-direction: column;
+  width: 70rem;
+  margin-left: 14rem;
+}
+
+.title {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 46px;
+}
+
+.sml-title {
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 3.7rem;
+}
+.sml-title-char{
+  margin-right: 3rem;
+
+}
+.stars-part{
+  display: flex;
+  column-gap: 1rem;
+  row-gap: 2rem;
+
+}
+.show-star-box{
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 13.4rem;
+  height: 1.3rem;
+  margin-top: 0.25rem;
+}
