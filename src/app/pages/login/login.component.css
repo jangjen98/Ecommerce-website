@@ -1,0 +1,55 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-header {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 73px;
+  text-align: center;
+  margin: 15.1rem 34.9rem 8.3rem 36.5rem;
+}
+
+.form-card {
+  background-color: #FFFFEC;
+  margin: 0 8.5rem 10.7rem 11rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 6.8rem 36.3rem 7.9rem 35.4rem;
+}
+
+label {
+  margin-bottom: 4.4rem;
+}
+
+input {
+  margin-bottom: 4rem;
+}
+
+.btn {
+  margin-top: 3.3rem;
+  width: 22.8rem !important;
+  padding: none !important;
+  margin-left: 35rem;
+}
+
+.login-btn {
+
+  height: 8.4rem;
+}
+
+.login-btn-text {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 46px;
+  text-align: center;
+  padding-top: 1.8rem;
+}

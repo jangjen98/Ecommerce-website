@@ -1,5 +1,28 @@
 <app-header></app-header>
 <div class="main-content">
-    <p>login works!</p>
+  <div class="register-header">Log In</div>
+  <div class="form-card">
+    <app-card>
+      <div class="form">
+        <label for="email">Email/Username:</label>
+        <input type="text" name="" />
+        <label for="password">Password</label>
+        <input type="text">
+        <div class="btn">
+          <app-card>
+            <div class="login-btn">
+              <div class="login-btn-text">Log In</div>
+            </div>
+          </app-card>
+        </div>
+
+
+      </div>
+    </app-card>
+  </div>
+
+  <div class="sign-up">
+    Not registered?, <a [routerLink]="SIGNIN">SIGN UP</a>
+  </div>
 </div>
 <app-footer></app-footer>

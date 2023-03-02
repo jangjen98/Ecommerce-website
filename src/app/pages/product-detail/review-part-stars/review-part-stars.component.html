@@ -6,7 +6,8 @@
   </div>
   <div class="stars-part" *ngFor="let eachStar of listStars">
     <div class="">{{ eachStar }}</div>
-    <img src="/assets/icons/star.png" alt="stars" />
+    <fa-icon [icon]="faStar_solid" class="icon-star"></fa-icon>
     <div class="show-star-box"></div>
+
   </div>
 </div>
