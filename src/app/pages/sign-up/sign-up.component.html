@@ -1,6 +1,32 @@
 <app-header></app-header>
 <div class="main-content">
-    <div class="register-header">User Registration</div>
-    <app-card></app-card>
+  <div class="register-header">User Registration</div>
+  <div class="form-card">
+    <app-card>
+      <div class="form">
+        <div class="first-line">
+          <div class="name-field sml-field">
+            <label for="name">Name:</label>
+            <input type="text" />
+          </div>
+          <div class="email-field sml-field">
+            <label for="email">Email:</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="sec-line">
+          <label for="password">Password:`</label>
+          <input type="password" />
+        </div>
+        <div class="btn">
+          <app-card>
+            <div class="sign-up-btn">
+              <div class="sign-up-btn-text">Sign Up</div>
+            </div>
+          </app-card>
+        </div>
+      </div>
+    </app-card>
+  </div>
 </div>
 <app-footer></app-footer>

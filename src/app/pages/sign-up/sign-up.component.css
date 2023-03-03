@@ -1,0 +1,59 @@
+.register-header {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 73px;
+  text-align: center;
+}
+
+.form-card {
+  background: #FFFFEC;
+  margin: 8.7rem 8.5rem 10.7rem 9.3rem;
+}
+
+.form,
+.sml-field {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.sml-field {
+  flex-grow: 1;
+
+
+}
+
+.name-field {
+  margin-right: 12.2rem;
+}
+
+.form {
+  margin: 6.9rem 6.7rem 5.9rem 3rem;
+}
+
+.first-line {
+  display: flex;
+
+}
+
+label {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+input, :visited{
+  margin-top: 4rem;
+  margin-bottom: 6.5rem;
+  background: rgba(96, 94, 94, 0.18) !important;
+  border-radius: 35px;
+  border: none !important;
+  height: 6.4rem;
+}
+.btn{
+  margin-top: 1rem;
+}
