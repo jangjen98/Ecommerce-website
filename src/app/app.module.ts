@@ -34,6 +34,8 @@ import { ReviewPartStarsComponent } from './pages/product-detail/review-part-sta
 import { ReviewPartCommentsComponent } from './pages/product-detail/review-part-comments/review-part-comments.component';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LinkedLoginSignupComponent } from './components/linked-login-signup/linked-login-signup.component';
+import { AlternativeSigningComponent } from './components/alternative-signing/alternative-signing.component';
 
 const COMPONENTS = [
   AppComponent,
@@ -65,7 +67,7 @@ const COMPONENTS = [
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS],
+  declarations: [...COMPONENTS, LinkedLoginSignupComponent, AlternativeSigningComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

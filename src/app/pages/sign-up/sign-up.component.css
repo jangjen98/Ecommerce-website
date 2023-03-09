@@ -38,6 +38,10 @@
 
 }
 
+.psw {
+  width: 86.8rem;
+}
+
 label {
   font-family: 'Inconsolata';
   font-style: normal;
@@ -46,7 +50,8 @@ label {
   line-height: 35px;
 }
 
-input, :visited{
+input,
+:visited {
   margin-top: 4rem;
   margin-bottom: 6.5rem;
   background: rgba(96, 94, 94, 0.18) !important;
@@ -54,6 +59,34 @@ input, :visited{
   border: none !important;
   height: 6.4rem;
 }
-.btn{
-  margin-top: 1rem;
+
+.btn {
+  margin: 1rem 110.7rem 0 -1.2rem !important;
+  height: 8.4rem;
+}
+
+.sign-up-btn {
+  height: 8.4rem;
+
+}
+
+.sign-up-btn-text {
+  margin: 1.8rem 1.6rem 1.8rem 3.6rem;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.sml-icon {
+  color: #E4A951;
+  margin: 0 4rem;
+}
+
+
+.sign-up-link:visited,
+:hover {
+  color: black;
 }

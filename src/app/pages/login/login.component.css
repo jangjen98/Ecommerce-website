@@ -62,7 +62,7 @@ input {
   margin: 0 4rem;
 }
 
-.sign-up,
+
 .login-btn-text {
   text-align: center;
   font-family: 'JetBrains Mono';
@@ -72,10 +72,8 @@ input {
   line-height: 46px;
 }
 
-.sign-up {
-  margin-bottom: 10rem;
-}
 
-.sign-up-link:visited, :hover {
+.sign-up-link:visited,
+:hover {
   color: black;
 }

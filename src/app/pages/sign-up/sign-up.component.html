@@ -16,7 +16,7 @@
         </div>
         <div class="sec-line">
           <label for="password">Password:`</label>
-          <input type="password" />
+          <input type="password" class="psw"/>
         </div>
         <div class="btn">
           <app-card>
@@ -28,5 +28,10 @@
       </div>
     </app-card>
   </div>
+  <app-linked-login-signup>
+    <img src="/assets/icons/big_star.png" alt="sml-icon" class="sml-icon">
+    Already signed up? <a [routerLink]="LOGIN" class="sign-up-link">Login</a>
+    <img src="/assets/icons/big_star.png" alt="sml-icon" class="sml-icon">
+  </app-linked-login-signup>
 </div>
 <app-footer></app-footer>
